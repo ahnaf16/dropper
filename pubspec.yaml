@@ -3,10 +3,10 @@ description: "A new Flutter project."
 
 version: 1.0.0+1
 
-publish_to: "none" # Remove this line if you wish to publish to pub.dev
+publish_to: "none"  
 
 environment:
-  sdk: ^3.9.2
+  sdk: ^3.11.0
 
 dependencies:
   flutter:
@@ -24,7 +24,7 @@ dependencies:
   super_drag_and_drop: ^0.9.1
   mime: ^2.0.0
   styled_widget: ^0.4.1
-  riverpod_annotation: ^3.0.0
+  riverpod_annotation: ^4.0.0
   flutter_acrylic: ^1.1.4
   hugeicons: ^1.0.2
   uuid: ^4.5.1
@@ -35,10 +35,9 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
-  riverpod_generator: ^3.0.0
-  riverpod_lint: ^3.0.0
+  riverpod_generator: ^4.0.0+1
   build_runner: ^2.4.12
-  custom_lint: ^0.8.0
+
 
 flutter:
   uses-material-design: true

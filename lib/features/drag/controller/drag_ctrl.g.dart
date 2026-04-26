@@ -10,11 +10,11 @@ part of 'drag_ctrl.dart';
 // ignore_for_file: type=lint, type=warning
 
 @ProviderFor(DragCtrl)
-const dragCtrlProvider = DragCtrlProvider._();
+final dragCtrlProvider = DragCtrlProvider._();
 
 final class DragCtrlProvider
     extends $NotifierProvider<DragCtrl, List<ScatterItem<XFile>>> {
-  const DragCtrlProvider._()
+  DragCtrlProvider._()
     : super(
         from: null,
         argument: null,
@@ -48,7 +48,6 @@ abstract class _$DragCtrl extends $Notifier<List<ScatterItem<XFile>>> {
   @$mustCallSuper
   @override
   void runBuild() {
-    final created = build();
     final ref =
         this.ref as $Ref<List<ScatterItem<XFile>>, List<ScatterItem<XFile>>>;
     final element =
@@ -59,6 +58,6 @@ abstract class _$DragCtrl extends $Notifier<List<ScatterItem<XFile>>> {
               Object?,
               Object?
             >;
-    element.handleValue(ref, created);
+    element.handleCreate(ref, build);
   }
 }
